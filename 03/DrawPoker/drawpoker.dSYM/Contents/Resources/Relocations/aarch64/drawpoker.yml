@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/kt/Documents/projects/03/DrawPoker/drawpoker'
+relocations:     []
+...

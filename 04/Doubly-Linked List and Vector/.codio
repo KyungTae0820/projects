@@ -1,0 +1,16 @@
+{
+// Configure your Run and Preview buttons here.
+
+// Run button configuration
+  "commands": {
+      //"BigInt: Compile": "make clean && make"
+  },
+
+// Preview button configuration
+  "preview": {
+        "Project Index (static)": "https://{{domain}}/{{index}}",
+        "Current File (static)": "https://{{domain}}/{{filepath}}",
+        "Box URL": "https://{{domain3000}}/"
+  },
+  "debugger": [{"type":"GDB","command":"/tmp/delist-12341234","before":"g++ -g delist.cpp delist-test.cpp -o /tmp/delist-12341234","uuid":"6a2e0df3-ab24-a866-fdb0-9b7b56635570","name":"delist-test"},{"type":"GDB","command":"/tmp/bigint-test-12341234","before":"g++ -g bigint.cpp bigint-test.cpp -o /tmp/bigint-test-12341234","uuid":"431af837-42bb-248f-1900-219e9820be00","name":"bigint-test"}]
+}

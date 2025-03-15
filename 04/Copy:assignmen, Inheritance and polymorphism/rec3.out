@@ -1,0 +1,18 @@
+g++ -g -Wall -Werror -std=c++11 -I /usr/include/gtest/ course.cpp -c -o course.o
+g++ -g -Wall -Werror -std=c++11 -I /usr/include/gtest/ student.cpp -c -o student.o
+g++ -g -Wall -Werror -std=c++11 -I /usr/include/gtest/ passfailcourse.cpp -c -o passfailcourse.o
+g++ -g -Wall -Werror -std=c++11 -I /usr/include/gtest/ scalecourse.cpp -c -o scalecourse.o
+g++ -g -Wall -Werror -std=c++11 -I /usr/include/gtest/ record3.cpp course.o student.o passfailcourse.o scalecourse.o -o record3
+record3.cpp: In function ‘int main(int, char**)’:
+record3.cpp:18:10: error: cannot declare variable ‘test’ to be of abstract type ‘Course’
+   Course test("CS103L",4);
+          ^~~~
+In file included from record3.cpp:4:0:
+course.h:11:7: note:   because the following virtual functions are pure within ‘Course’:
+ class Course{
+       ^~~~~~
+course.h:16:20: note: 	virtual std::__cxx11::string Course::getFinalLetterGrade(double)
+     virtual string getFinalLetterGrade(double grade) = 0;
+                    ^~~~~~~~~~~~~~~~~~~
+Makefile:41: recipe for target 'record3' failed
+make: *** [record3] Error 1

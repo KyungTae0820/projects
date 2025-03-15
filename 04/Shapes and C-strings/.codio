@@ -1,0 +1,65 @@
+{
+    "commands": {
+        //"Compile & Run": "g++ -o {{filename_no_ext}} {{filename}} && ./{{filename_no_ext}}",
+        //#"Compile": "g++ -o {{filename_no_ext}} {{filename}}",
+        //#"Run": "./{{filename_no_ext}}"
+    },
+    "preview": {
+        "Viewer": "https://{{domain3000}}/",
+        "Virtual Desktop": "https://{{domain3000}}/",
+        "Project Index (static)": "https://{{domain}}/{{index}}",
+        "Current File (static)": "https://{{domain}}/{{filepath}}",
+        "Box URL": "http://{{domain3000}}/",
+        "Box URL SSL": "https://{{domain3000}}/"
+    },
+  "debugger": [
+      {
+          "type": "GDB",
+          "command": "/tmp/program83b0717fa37e2e0346bafc8c1429cb87 ",
+          "before": "g++ -g shapes.cpp bmplib.cpp -o /tmp/program83b0717fa37e2e0346bafc8c1429cb87",
+          "single": true,
+          "lang": "cpp",
+          "additionalCompilerFlags": "",
+          "sourcePath": "{{filepath}}",
+          "args": "",
+          "uuid": "63f293ba-8385-602d-bcbe-7b86f94c9c58",
+          "name": "Shapes Debug"
+      },
+      {
+          "type": "GDB",
+          "command": "/tmp/program83b0717fa37e2e0346bafc8c1429cb88 ",
+          "before": "g++ -g stringdemo.cpp -o /tmp/program83b0717fa37e2e0346bafc8c1429cb88",
+          "single": true,
+          "lang": "cpp",
+          "additionalCompilerFlags": "",
+          "sourcePath": "{{filepath}}",
+          "args": "",
+          "uuid": "63f293ba-8385-602d-bcbe-7b86f94c9c59",
+          "name": "Stringdemo Debug"
+      },
+      {
+          "type": "GDB",
+          "command": "/tmp/program83b0717fa37e2e0346bafc8c1429cb89 ",
+          "before": "g++ -g game.cpp -o /tmp/program83b0717fa37e2e0346bafc8c1429cb89",
+          "single": true,
+          "lang": "cpp",
+          "additionalCompilerFlags": "",
+          "sourcePath": "{{filepath}}",
+          "args": "",
+          "uuid": "63f293ba-8385-602d-bcbe-7b86f94c9c60",
+          "name": "Game Debug"
+      },
+      {
+          "type": "GDB",
+          "command": "/tmp/program83b0717fa37e2e0346bafc8c1429cb85 ",
+          "before": "g++ -g {{filepath}} -o /tmp/program83b0717fa37e2e0346bafc8c1429cb85",
+          "single": true,
+          "lang": "cpp",
+          "additionalCompilerFlags": "",
+          "sourcePath": "{{filepath}}",
+          "args": "",
+          "uuid": "63f293ba-8385-602d-bcbe-7b86f94c9c55",
+          "name": "Debug Current File"
+      }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+    // This file is used to configure the three buttons along Codio's top menu.
+    
+    // Run button configuration
+    "commands": {
+        "Scramble: Compile": "g++ -g -Wall scramble.cpp -o scramble",
+        "Memleak: Compile": "g++ -g memleak.cpp -o memleak"
+    },
+    // Preview button configuration
+    "preview": {
+        "Project Index (static)": "https://{{domain}}/{{index}}",
+        "Current File (static)": "https://{{domain}}/{{filepath}}",
+        "Box URL": "http://{{domain3000}}/",
+        "Box URL SSL": "https://{{domain3000}}/"
+    },
+    // Debugger target button configuration
+    "debugger": [{"type":"GDB","command":"/tmp/program83b0717fa37e2e0346bafc8c1429ad01 wordbank.txt 57","before":"g++ -g scramble.cpp -o /tmp/program83b0717fa37e2e0346bafc8c1429ad01","single":true,"lang":"cpp","additionalCompilerFlags":"","sourcePath":"{{filepath}}","args":"wordbank.txt 57","uuid":"63f293ba-8385-602d-bcbe-7b86f94cad01","name":"Debug scramble wordbank.txt 57"},
+    {"type":"GDB","command":"/tmp/program83b0717fa37e2e0346bafc8c142989e7","before":"g++ -g quad.cpp quad-test.cpp -o /tmp/program83b0717fa37e2e0346bafc8c142989e7","single":false,"lang":"cpp","additionalCompilerFlags":"","sourcePath":"{{filepath}}","args":"","uuid":"63f293ba-8385-602d-bcbe-7b86f94cad02","name":"Debug quad-test"}]
+}

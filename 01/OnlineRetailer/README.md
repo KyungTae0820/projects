@@ -1,0 +1,3 @@
+Amazon is one of the world's largest e-commerce and cloud computing companies. It offers a vast range of products and services, including online retail, digital streaming, artificial intelligence, and cloud services through Amazon Web Services (AWS). With a global presence, Amazon has revolutionized online shopping and technology, becoming a leader in both e-commerce and cloud computing industries.
+
+I have implemented a simplified version of Amazon's core features through C++, focusing on product listing, user interactions, and basic cart functionalities. This project showcases of replicating key aspects of Amazon's platform using software development principles.
